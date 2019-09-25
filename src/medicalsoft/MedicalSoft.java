@@ -32,8 +32,9 @@ public class MedicalSoft extends Validacion {
                 + "El medico es: "+medico1.getFullname());
         
         Validacion f=new Validacion("Jose","Barrios","15-11-2000","300");
-        medico1.setTelefono("300");
+        medico1.setTelefono("3000");
         f.ValidarCelular();
+        f.ValidarFijo();
     }
 
     public MedicalSoft(String nom, String ape, String fech, String tel) {

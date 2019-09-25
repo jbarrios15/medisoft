@@ -60,6 +60,17 @@ public class Validacion extends Persona {
         return true;
     }
     public boolean ValidarFijo(){
+        Pattern p=Pattern.compile("[3]");
+ 
+        // Buscamos las coincidencias el el primer caracter del numero de telefono
+        Matcher matcher=p.matcher(telefono.substring(0,1));
+ 
+        if(matcher.matches())
+        {
+            System.out.println("El telefono empieza por 3");
+        }else{
+            System.out.println("El telefono NO empieza por 3");
+        }
         return true;
     }
 }

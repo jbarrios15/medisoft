@@ -11,8 +11,8 @@ package medicalsoft;
  */
 public class Medico extends Persona{
 
-    public Medico(String nom, String ape, String fech) {
-        super(nom, ape, fech);
+    public Medico(String nom, String ape, String fech, String tel) {
+        super(nom, ape, fech, tel);
     }
 
     

@@ -25,15 +25,16 @@ public class Persona {
     private String genero;
     private String direccion;
     private String email;
-    private String telefono;
+    String telefono;
     private String celular;
 
     //constructor
     
-    public Persona(String nom, String ape,String fech) {
+    public Persona(String nom, String ape,String fech,String tel) {
         this.nombres = nom;
         this.apellidos = ape;
         this.fecha_nacimiento= fech;
+        this.telefono=tel;
     }
 
     //metodos

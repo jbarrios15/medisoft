@@ -9,7 +9,7 @@ package medicalsoft;
  *
  * @author estudiante
  */
-public class MedicalSoft {
+public class MedicalSoft extends Validacion {
 
     /**
      * @param args the command line arguments
@@ -22,7 +22,7 @@ public class MedicalSoft {
        // System.out.println(PrimerMedico.getNombres());
         //System.out.println(PrimerMedico.apellidos);
         
-        Medico medico1=new Medico("Jose","Barrios","15-11-2000");
+        Medico medico1=new Medico("Jose","Barrios","15-11-2000","300");
         medico1.setNombres("Jose");
         medico1.setApellidos("Barrios");
         medico1.setFecha_nacimiento("15/11/2000");
@@ -30,6 +30,14 @@ public class MedicalSoft {
         
         System.out.println("Tu edad es: "+medico1.GetEdad()+" años \n"
                 + "El medico es: "+medico1.getFullname());
+        
+        Validacion f=new Validacion("Jose","Barrios","15-11-2000","300");
+        medico1.setTelefono("300");
+        f.ValidarCelular();
+    }
+
+    public MedicalSoft(String nom, String ape, String fech, String tel) {
+        super(nom, ape, fech, tel);
     }
     
 }

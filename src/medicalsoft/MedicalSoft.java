@@ -33,12 +33,18 @@ public class MedicalSoft extends Validacion {
         
         Validacion f=new Validacion("Jose","Barrios","15-11-2000","300");
         medico1.setTelefono("3000");
+        medico1.setCelular("4000");
         f.ValidarCelular();
-        f.ValidarFijo();
+        f.ValidarTelefono();
+        Arreglo r=new Arreglo();
     }
 
     public MedicalSoft(String nom, String ape, String fech, String tel) {
         super(nom, ape, fech, tel);
     }
+    
+    
+    
+        
     
 }

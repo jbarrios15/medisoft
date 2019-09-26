@@ -59,7 +59,7 @@ public class Validacion extends Persona {
         }
         return true;
     }
-    public boolean ValidarFijo(){
+    public boolean ValidarTelefono(){
         Pattern p=Pattern.compile("[3]");
  
         // Buscamos las coincidencias el el primer caracter del numero de telefono

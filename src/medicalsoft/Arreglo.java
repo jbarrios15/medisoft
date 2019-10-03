@@ -35,7 +35,8 @@ public class Arreglo extends JFrame{
     
     public static void main(String[] args)  {
       
-        Arreglo r=new Arreglo();
+//        Arreglo r=new Arreglo();
+        Ventana t=new Ventana();
         
     }
     

@@ -36,7 +36,8 @@ public class MedicalSoft extends Validacion {
         medico1.setCelular("4000");
         f.ValidarCelular();
         f.ValidarTelefono();
-        Arreglo r=new Arreglo();
+//        Arreglo r=new Arreglo();
+        Ventana e=new Ventana();
     }
 
     public MedicalSoft(String nom, String ape, String fech, String tel) {
